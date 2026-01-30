@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,27 +15,31 @@
             min-height: 100vh;
             background-color: #fffbe0;
             margin: 0;
-            padding: 10px; /* Add some padding for smaller screens */
-            box-sizing: border-box; /* Include padding in element's total width and height */
+            padding: 10px;
+            box-sizing: border-box;
         }
+
         .container {
             background-color: #fff;
             padding: 30px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
-            width: 100%; /* Make container full width on small screens */
-            max-width: 1200px; /* Max width for larger screens */
+            width: 100%;
+            max-width: 1200px;
             box-sizing: border-box;
         }
+
         h1 {
             color: #ffc107;
             margin-bottom: 20px;
         }
+
         p {
             color: #555;
             font-size: 18px;
         }
+
         .back-button {
             margin-top: 20px;
             padding: 10px 20px;
@@ -47,27 +52,34 @@
             text-decoration: none;
             transition: background-color 0.3s ease;
         }
+
         .back-button:hover {
             background-color: #5a6268;
         }
+
         .table-responsive {
-            overflow-x: auto; /* Enable horizontal scrolling for the table */
+            overflow-x: auto;
             margin-top: 20px;
         }
+
         table {
             width: 100%;
-            min-width: 800px; /* Ensure table doesn't get too narrow */
+            min-width: 800px;
             border-collapse: collapse;
         }
-        th, td {
+
+        th,
+        td {
             border: 1px solid #ddd;
             padding: 8px;
             text-align: left;
-            white-space: nowrap; /* Prevent text wrapping in table cells */
+            white-space: nowrap;
         }
+
         th {
             background-color: #f2f2f2;
         }
+
         .save-button {
             margin-top: 20px;
             padding: 10px 20px;
@@ -80,24 +92,29 @@
             text-decoration: none;
             transition: background-color 0.3s ease;
         }
+
         .save-button:hover {
             background-color: #e0a800;
         }
+
         .notification {
             margin-top: 15px;
             padding: 10px;
             border-radius: 5px;
             color: #fff;
-            display: none; /* Hidden by default */
+            display: none;
         }
+
         .notification.success {
             background-color: #28a745;
         }
+
         .notification.error {
             background-color: #dc3545;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>Logistics</h1>
@@ -120,8 +137,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td rowspan="6">Priority Grid</td>
-                        <!-- <td>Priority 1</td> -->
+                        <td rowspan="6">Logistics</td>
                         <td>
                             <strong>Operational Efficiency</strong><br>
                             • 100% Truck Availability<br>
@@ -129,7 +145,6 @@
                             • ≤4 hrs GIGO, ≤14 hrs CICO<br>
                             • ≥95% OTD Ring 1
                         </td>
-
                         <td contenteditable="true"></td>
                         <td contenteditable="true"></td>
                         <td contenteditable="true"></td>
@@ -140,7 +155,6 @@
                         <td contenteditable="true"></td>
                     </tr>
                     <tr>
-                        <!-- <td>Priority 2</td> -->
                         <td>
                             <strong>Lowest Cost-to-Serve</strong><br>
                             • CPTK ≤ $32.4 (–10% vs ’25)<br>
@@ -148,7 +162,6 @@
                             • 15% Backhaul Rate<br>
                             • ≤ 13 FCT (Freight Cost Per Ton)
                         </td>
-
                         <td contenteditable="true"></td>
                         <td contenteditable="true"></td>
                         <td contenteditable="true"></td>
@@ -159,7 +172,6 @@
                         <td contenteditable="true"></td>
                     </tr>
                     <tr>
-                        <!-- <td>Priority 3</td> -->
                         <td>
                             <strong>Transporters Maturity</strong><br>
                             • +50% 3-star Transporters<br>
@@ -167,7 +179,6 @@
                             • &lt;5% Inactive Trucks<br>
                             • 50% LAP Reliance Reduction
                         </td>
-
                         <td contenteditable="true"></td>
                         <td contenteditable="true"></td>
                         <td contenteditable="true"></td>
@@ -185,7 +196,6 @@
                             • 50% HRD Reduction<br>
                             • 90% Safe Km Driven
                         </td>
-
                         <td contenteditable="true"></td>
                         <td contenteditable="true"></td>
                         <td contenteditable="true"></td>
@@ -196,7 +206,6 @@
                         <td contenteditable="true"></td>
                     </tr>
                     <tr>
-                        <!-- <td>Priority 3</td> -->
                         <td>
                             <strong>Innovation</strong><br>
                             • 100% Innovation Adoption<br>
@@ -204,7 +213,6 @@
                             • AI Data Integration (One Source of Truth)<br>
                             • Smart Dispatch & Delivery Predictive Analytics
                         </td>
-
                         <td contenteditable="true"></td>
                         <td contenteditable="true"></td>
                         <td contenteditable="true"></td>
@@ -215,7 +223,6 @@
                         <td contenteditable="true"></td>
                     </tr>
                     <tr>
-                        <!-- <td>Priority 3</td> -->
                         <td>
                             <strong>People Investment</strong><br>
                             • +50% Dispatch/Transport Planner Certified<br>
@@ -223,7 +230,6 @@
                             • Logistics Academy Setup & Digital Upskilling<br>
                             • Bench Strength (Min 1 Successor)
                         </td>
-
                         <td contenteditable="true"></td>
                         <td contenteditable="true"></td>
                         <td contenteditable="true"></td>
@@ -233,122 +239,88 @@
                         <td contenteditable="true"></td>
                         <td contenteditable="true"></td>
                     </tr>
-                    
                 </tbody>
             </table>
         </div>
+
         <button id="saveButton" class="save-button">Save</button>
         <div id="notification" class="notification"></div>
-       <p>Note: Home button takes you out of this section</p>
+        <p>Note: Home button takes you out of this section</p>
         <a href="/" class="back-button">Home Page</a>
     </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const PAGE_NAME = 'index';
+        document.addEventListener('DOMContentLoaded', function () {
+            const PAGE_NAME = 'index'; // ✅ Kept as index
             const table = document.querySelector('table');
             const saveButton = document.getElementById('saveButton');
             const notification = document.getElementById('notification');
 
-            // --- Data Functions ---
-
-            // Gets data from the editable cells of the table into a 2D array
-             function getTableData() {
+            function getTableData() {
                 const data = [];
                 const bodyRows = table.querySelectorAll('tbody tr');
-
                 bodyRows.forEach(tr => {
                     const rowData = [];
                     const editableTds = tr.querySelectorAll('td[contenteditable="true"]');
-                    editableTds.forEach(td => {
-                        rowData.push(td.textContent);
-                    });
+                    editableTds.forEach(td => rowData.push(td.textContent));
                     data.push(rowData);
                 });
-
                 return data;
             }
 
-
-            // Populates the table with a 2D data array
             function updateTable(data) {
                 if (!data) return;
                 const bodyRows = table.querySelectorAll('tbody tr');
                 bodyRows.forEach((tr, i) => {
                     const editableTds = Array.from(tr.querySelectorAll('td')).slice(2);
                     editableTds.forEach((td, j) => {
-                        if(data[i] && data[i][j] !== undefined) {
-                            td.textContent = data[i][j] || "";
-                        }
+                        if (data[i] && data[i][j] !== undefined) td.textContent = data[i][j] || "";
                     });
                 });
             }
-            
-            // Shows a status notification
+
             function showNotification(message, type) {
                 notification.textContent = message;
                 notification.className = 'notification ' + type;
                 notification.style.display = 'block';
-                setTimeout(() => {
-                    notification.style.display = 'none';
-                }, 3000);
+                setTimeout(() => { notification.style.display = 'none'; }, 3000);
             }
 
-            // --- Event Listeners ---
-
-            saveButton.addEventListener('click', function() {
+            saveButton.addEventListener('click', function () {
                 saveButton.disabled = true;
                 saveButton.textContent = 'Saving...';
-                
                 const dataToSave = getTableData();
-                
+
                 fetch('https://conference-backend-extension.onrender.com/save_data', {
                     method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({ page: PAGE_NAME, data: dataToSave }),
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ page: PAGE_NAME, data: dataToSave })
                 })
-                .then(response => response.json())
-                .then(result => {
-                    if (result.status === 'success') {
-                        showNotification('Data saved successfully!', 'success');
-                    } else {
-                        showNotification('Error saving data: ' + result.message, 'error');
-                    }
-                })
-                .catch(error => {
-                    console.error('Save error:', error);
-                    showNotification('An unexpected error occurred.', 'error');
-                })
-                .finally(() => {
-                    saveButton.disabled = false;
-                    saveButton.textContent = 'Save';
-                });
+                    .then(response => response.json())
+                    .then(result => {
+                        if (result.status === 'success') showNotification('Data saved successfully!', 'success');
+                        else showNotification('Error saving data: ' + result.message, 'error');
+                    })
+                    .catch(error => {
+                        console.error('Save error:', error);
+                        showNotification('An unexpected error occurred.', 'error');
+                    })
+                    .finally(() => {
+                        saveButton.disabled = false;
+                        saveButton.textContent = 'Save';
+                    });
             });
 
-            // --- Initial Load ---
+            // Load initial data
+            fetch(`https://conference-backend-extension.onrender.com/load_data/${PAGE_NAME}`)
+                .then(res => res.json())
+                .then(data => { if (data) updateTable(data); })
+                .catch(err => console.error('Error loading initial data:', err));
 
-            function loadInitialData() {
-                fetch(`https://conference-backend-extension.onrender.com/load_data/${PAGE_NAME}`)
-                .then(response => response.json())
-                .then(data => {
-                    console.log("Loaded initial data:", data);
-                    if (data) {
-                        updateTable(data);
-                    }
-                })
-                .catch(error => console.error('Error loading initial data:', error));
-            }
-
-            loadInitialData();
-
-            // --- Auto-save ---
-            setInterval(() => {
-                saveButton.click();
-            }, 5000); // Auto-save every 5 seconds
+            // Auto-save every 5 seconds
+            setInterval(() => saveButton.click(), 5000);
         });
     </script>
-    <!-- <script src="/static/js/autosave.js"></script> -->
 </body>
+
 </html>
