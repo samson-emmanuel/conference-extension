@@ -253,16 +253,15 @@
             // --- Data Functions ---
 
             // Gets data from the editable cells of the table into a 2D array
-            function getTableData() {
+             function getTableData() {
                 const data = [];
-                const bodyRows = Array.from(table.querySelectorAll('tbody tr'));
+                const bodyRows = table.querySelectorAll('tbody tr');
 
-                bodyRows.forEach(row => {
+                bodyRows.forEach(tr => {
                     const rowData = [];
-                    // Get only editable cells
-                    const editableTds = Array.from(row.querySelectorAll('td[contenteditable="true"]'));
+                    const editableTds = tr.querySelectorAll('td[contenteditable="true"]');
                     editableTds.forEach(td => {
-                        rowData.push(td.textContent || "");
+                        rowData.push(td.textContent);
                     });
                     data.push(rowData);
                 });
