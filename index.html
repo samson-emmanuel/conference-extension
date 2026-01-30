@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Priority Grid</title>
+    <title>Logistics</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -100,8 +100,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>Priority Grid</h1>
-        <p>This is the main page for the Priority Grid.</p>
+        <h1>Logistics</h1>
+        <p>This is the main page for the Logistics Grid.</p>
         <div class="table-responsive">
             <table>
                 <thead>
@@ -255,18 +255,21 @@
             // Gets data from the editable cells of the table into a 2D array
             function getTableData() {
                 const data = [];
-                const editableCells = table.querySelectorAll('td[contenteditable="true"]');
-                const numRows = 3;
-                const numCols = 8;
-                for (let i = 0; i < numRows; i++) {
+                const bodyRows = Array.from(table.querySelectorAll('tbody tr'));
+
+                bodyRows.forEach(row => {
                     const rowData = [];
-                    for (let j = 0; j < numCols; j++) {
-                        rowData.push(editableCells[i * numCols + j].textContent);
-                    }
+                    // Get only editable cells
+                    const editableTds = Array.from(row.querySelectorAll('td[contenteditable="true"]'));
+                    editableTds.forEach(td => {
+                        rowData.push(td.textContent || "");
+                    });
                     data.push(rowData);
-                }
+                });
+
                 return data;
             }
+
 
             // Populates the table with a 2D data array
             function updateTable(data) {
